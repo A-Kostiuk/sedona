@@ -1,0 +1,35 @@
+.main-nav__list {
+  @include clear-list;
+}
+
+.main-nav__link {
+  color: $basic-white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  background-color: $basic-light-blue;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
+
+  &:hover {
+    background-color: $basic-light-blue--hover;
+  }
+
+  &:active {
+    background-color: $basic-light-blue--active;
+    color: rgba($basic-white, 0.3);
+  }
+}
+
+.main-nav__link--current {
+  &:hover,
+  &:active {
+    background-color: $basic-light-blue;
+    color: $basic-white;
+  }
+}

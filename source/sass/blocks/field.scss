@@ -1,0 +1,21 @@
+.field__label {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: $special-black;
+}
+
+.field__input {
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $basic-black;
+  background-color: $grey-200;
+  padding: 18px 22px 14px;
+
+  &::placeholder {
+    color: inherit;
+  }
+}

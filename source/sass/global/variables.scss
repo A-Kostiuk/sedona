@@ -1,0 +1,18 @@
+$basic-light-blue: #81b3d2;
+$basic-light-blue--hover: #669ec0;
+$basic-light-blue--active: #5496bd;
+
+$basic-white: #ffffff;
+
+$basic-grey: #eeeeee;
+$grey-200: #f2f2f2;
+
+$basic-black: #000000;
+$special-black: #333333;
+
+// Mixins
+@mixin clear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

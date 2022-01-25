@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Оставьте свой отзыв</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -13,18 +15,18 @@
       <nav class="main-nav">
         <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a class="page-header__link" href="index.html">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link page-header__link--current">Форма Отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Форма Отзыва</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </div>
@@ -106,10 +108,10 @@
         </fieldset>
         <fieldset class="feedback-form__item emotions">
           <legend class="visually-hidden">Возникшие эмоции:</legend>
-        <label class="emotions__title">Опишите свои эмоции:</label>
-        <textarea name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <label class="feedback-form__title" for="emotions">Опишите свои эмоции:</label>
+        <textarea class="emotions__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <input type="submit" value="Отправить отзыв">
+      <input class="feedback-form__button button" type="submit" value="Отправить отзыв">
       </form>
     </section>
   </main>
@@ -117,16 +119,16 @@
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__hash">#visitSedona</p>
-      <ul class="page-footer__social-list social">
-        <li class="social__item"><a class="social__link" href="#">
+      <ul class="page-footer__social social">
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Мы в Твиттере</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link" href="#">
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link" href="#">
+        <li class="social__item"><a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">Канал на Ютубе</span>
           </a>
         </li>
@@ -142,6 +144,7 @@
       </a>
     </div>
   </footer>
+
 
 </body>
 </html>

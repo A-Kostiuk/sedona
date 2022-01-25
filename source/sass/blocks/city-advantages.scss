@@ -1,0 +1,19 @@
+.city-advantages__list {
+  @include clear-list;
+}
+
+.city-advantages__title {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.city-advantages__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}

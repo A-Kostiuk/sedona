@@ -1,0 +1,10 @@
+.impression__list {
+  @include clear-list;
+}
+
+.impression__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $basic-black;
+}

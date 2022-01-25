@@ -1,8 +1,14 @@
 {
   "extends": "stylelint-config-htmlacademy",
-
   "rules": {
-    "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {
+      "message": "Использовать пробела два для отступов должен ты"}],
+    "number-leading-zero": null,
+    "property-no-unknown": [ true, {
+      "ignoreProperties": [
+        "composes"
+      ]
+    }],
+    "unit-whitelist": ["em", "rem", "s", "px", "%", "fr"]
   }
 }

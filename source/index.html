@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -15,42 +16,45 @@
       <nav class="main-nav">
         <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="page-header__list">
-            <li class="page-header__item">
-              <a class="page-header__link page-header__link--current">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="form.html">Форма Отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
+
   <main class="page__main">
     <h1 class="visually-hidden">Информационный сайт для туристов Sedona</h1>
-      <section class="advantages">
+    <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages__slogan">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="advantages__list">
+        <ol class="advantages__list">
           <li class="advantages__item advantage">
-
             <div class="advantage__content">
+              <div class="advantage__description">
               <h3 class="advantage__title advantage__title--white">Настоящий городок</h3>
-              <p class="advantage__number advantage__number--white">&mdash; &#8470;1 &mdash;</p>
+              <p class="advantage__text advantage__text--white">&mdash; &#8470;1 &mdash;</p>
               <p class="advantage__text advantage__text--white">
                 Седона не аттракцион для <br>
                 туристов, там течет своя <br>
                 жизнь
               </p>
+            </div>
+              <img class="advantages__image" src="img/photo-city.jpg" alt="Город на фоне гор" width="520" height="260">
             </div>
 
             <div class="city-advantages">
@@ -84,44 +88,46 @@
           </li>
           <li class="advantages__item advantage">
             <div class="advantage__content">
+              <div class="advantage__description">
               <h3 class="advantage__title advantage__title--white">Там есть мост дьявола</h3>
-              <p class="advantage__number advantage__number--white">&mdash; &#8470;2 &mdash;</p>
+              <p class="advantage__text advantage__text--white">&mdash; &#8470;2 &mdash;</p>
               <p class="advantage__text advantage__text--white">
                 Да, по нему можно <br>
                 пройти! Если вы <br>
                 осмелитесь, конечно
               </p>
             </div>
-            <img class="advantage__image" src="img/photo-bridge.jpg" alt="Мост из скал" width="800" height="256">
+            <img class="advantages__image" src="img/devils-bridge.jpg" alt="Мост из скал" width="520" height="260">
+          </div>
           </li>
-          <li class="advantages__item advantage">
-              <h3 class="advantage__title advantage__title--black">Небольшая площадь</h3>
-              <p class="advantage__number advantage__number--black">&mdash; &#8470;3 &mdash;</p>
-              <p class="advantage__text advantage__text--black">
-                Все интересные места <br>
-                находятся очень близко
-              </p>
+          <li class="advantages__item advantage advantage--grey">
+            <h3 class="advantage__title">Небольшая площадь</h3>
+            <p class="advantage__text">&mdash; &#8470;3 &mdash;</p>
+            <p class="advantage__text">
+              Все интересные места <br>
+              находятся очень близко
+            </p>
           </li>
-          <li class="advantages__item advantage">
-            <h3 class="advantage__title advantage__title--black">Красивая дорога</h3>
-            <p class="advantage__number advantage__number--black">&mdash; &#8470;4 &mdash;</p>
-            <p class="advantage__text advantage__text--black">
+          <li class="advantages__item advantage advantage--grey">
+            <h3 class="advantage__title">Красивая дорога</h3>
+            <p class="advantage__text">&mdash; &#8470;4 &mdash;</p>
+            <p class="advantage__text">
               Ехать в седону из <br>
               Лас-вегаса совсем <br>
               не скучно!
             </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title advantage__title--black">Мало туристов</h3>
-          <p class="advantage__number advantage__number--black">&mdash; &#8470;5 &mdash;</p>
-          <p class="advantage__text advantage__text--black">
-            Большинство едет в <br>
-            Гранд каньон и <br>
-            толпится там
-          </p>
-      </li>
+          </li>
+          <li class="advantages__item advantage advantage--grey">
+            <h3 class="advantage__title">Мало туристов</h3>
+            <p class="advantage__text">&mdash; &#8470;5 &mdash;</p>
+            <p class="advantage__text">
+              Большинство едет в <br>
+              Гранд каньон и <br>
+              толпится там
+            </p>
+          </li>
 
-        </ul>
+        </ol>
       </div>
     </section>
 
@@ -144,16 +150,16 @@
   <footer class="page__footer page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__hash">#visitSedona</p>
-      <ul class="page-footer__social-list social">
-        <li class="social__item"><a class="social__link" href="#">
+      <ul class="page-footer__social social">
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">
             <span class="visually-hidden">Мы в Твиттере</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link" href="#">
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link" href="#">
+        <li class="social__item"><a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">Канал на Ютубе</span>
           </a>
         </li>
@@ -168,7 +174,6 @@
         </svg>
       </a>
     </div>
-
   </footer>
 
 </body>
