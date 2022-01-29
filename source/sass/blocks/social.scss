@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    background-color: $basic-light-blue--hover;
+    background-color: $light-blue-100;
   }
 
   &:active::after {
@@ -29,7 +29,7 @@
 }
 
 .social__link--twitter::after {
-  background-image: url("../../img/social/twitter.svg");
+  background-image: url("../img/social/twitter.svg");
   width: 18px;
   height: 15px;
   top: 17px;
@@ -37,7 +37,7 @@
 }
 
 .social__link--facebook::after {
-  background-image: url("../../img/social/facebook.svg");
+  background-image: url("../img/social/facebook.svg");
   width: 9px;
   height: 19px;
   top: 13px;
@@ -45,7 +45,7 @@
 }
 
 .social__link--youtube::after {
-  background-image: url("../../img/social/youtube.svg");
+  background-image: url("../img/social/youtube.svg");
   width: 20px;
   height: 14px;
   top: 17px;

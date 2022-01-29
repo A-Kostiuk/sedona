@@ -1,0 +1,31 @@
+.photo__description {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-200;
+
+    &--darken-grey {
+      background-color: $grey-300;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba($color: $basic-black, $alpha: 0.3);
+  }
+}
+
+.photo__caption {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-black;
+  font-weight: 700;
+
+  &--regular {
+    font-weight: 400;
+    text-transform: none;
+    color: $special-black;
+  }
+}
+
+.photo__img {
+  width: 100%;
+}

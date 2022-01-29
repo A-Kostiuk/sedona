@@ -1,0 +1,11 @@
+.hide--tablet {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.hide--desctop {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}

@@ -1,19 +1,145 @@
-.advantages__slogan {
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
+.advantages__list {
+  counter-reset: advantages;
+
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.advantages__text {
+.advantages__item--grey {
+  position: relative;
+  padding: 26px 20px 24px;
+  background-color: $basic-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    background-color: $grey-400;
+  }
+
+  &:last-child::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.advantages__item--basis {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.advantages__slogan {
+  margin: 0 0 35px;
+  padding: 0 12px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__subtitle {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  padding: 0 12px;
+  margin: 0 0 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 41px;
+  }
 }
 
-.advantages__list {
-  @include clear-list;
+.advantages__content {
+  line-height: 0;
+
+  &--margin-bottom {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__description {
+  padding: 54px 20px 39px;
+  background-color: $basic-light-blue;
+
+  &--second {
+    order: 2;
+  }
+
+  &--slice {
+    @media (max-width: $only-mobile-width) {
+      background-image: url("data:image/svg+xml,%3Csvg width='320' height='37' viewBox='0 0 320 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-230 0H154V37L-230 0Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M538 0H154V37L538 0Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 768px 37px;
+      background-position-x: 50%;
+      background-position-y: -18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 20px 43px;
+  }
+}
+
+.advantages__image {
+  grid-column: span 2;
+  height: 260px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 21px;
+  text-align: center;
+}
+
+.advantages__text::before {
+  display: block;
+  counter-increment: advantages;
+  content: "— №" counter(advantages) " —";
+  margin-bottom: 21px;
+}
+
+.advantages__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-black;
+  text-align: center;
+  margin: 0;
+
+  &--white {
+    color: $basic-white;
+  }
+}
+
+.advantages__text:not(:last-child) {
+  margin: 0 0 21px;
 }

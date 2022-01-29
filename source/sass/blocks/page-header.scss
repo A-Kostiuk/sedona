@@ -1,6 +1,11 @@
-.page-header__logo img {
-  display: block;
-  width: 102px;
-  height: 84px;
+.page-header__main-image {
   margin: 0 auto;
+  background-color: #766458;
+  background-image: url("../../img/header-triangle.svg"), url("../../img/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-size: 1200px 57px, cover;
+  text-align: center;
+  padding: 90px 18px 85px;
 }

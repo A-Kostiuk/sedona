@@ -2,14 +2,39 @@
   height: 100%;
 }
 
+.page__header {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 55px;
+  }
+}
+
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  min-width: 320px;
+  max-width: $desctop-width - 80;
+
+  @media (min-width: $desctop-width) {
+    background-color: $grey-100;
+  }
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+
+  @media (min-width: $desctop-width) {
+    background-color: $basic-white;
+  }
 }

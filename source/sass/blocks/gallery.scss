@@ -1,0 +1,21 @@
+.gallery__list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery__item {
+  &--row {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+}

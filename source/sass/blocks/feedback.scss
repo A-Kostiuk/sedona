@@ -1,0 +1,26 @@
+.feedback {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0 120px;
+  }
+}
+
+.feedback__title {
+  text-align: center;
+  margin: 0 0 26px;
+}
+
+.feedback__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $special-black;
+  text-align: center;
+  margin: 0 0 16px;
+}

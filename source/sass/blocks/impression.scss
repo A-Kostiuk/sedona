@@ -1,10 +1,42 @@
+.impression__title {
+  margin: 0 0 37px;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
 .impression__list {
   @include clear-list;
 }
 
 .impression__text {
+  display: block;
+  position: relative;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $basic-black;
+  margin-bottom: 43px;
+  padding-left: 78px;
+}
+
+.impression__radio + .impression__text::before {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  background-color: $grey-200;
+  border-radius: 50%;
+  left: 0;
+  top: -15px;
+}
+
+.impression__radio:checked + .impression__text::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: $special-black;
+  border-radius: 50%;
+  left: 16px;
+  top: 0;
 }

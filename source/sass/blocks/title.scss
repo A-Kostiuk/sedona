@@ -1,0 +1,15 @@
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $basic-black;
+
+  &--white {
+    color: $basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}

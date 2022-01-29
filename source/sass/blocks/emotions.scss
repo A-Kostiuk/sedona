@@ -1,3 +1,36 @@
+.emotions {
+  margin-bottom: 51px;
+}
+
+.emotions__title {
+  display: block;
+  padding: 20px 0 0;
+  margin: 0 0 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      height: 1px;
+      background-color: $grey-500;
+    }
+
+    &::before {
+      margin-right: 47px;
+    }
+
+    &::after {
+      margin-left: 47px;
+    }
+  }
+}
+
 .emotions__textarea {
   font-family: inherit;
   font-size: 18px;

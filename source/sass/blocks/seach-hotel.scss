@@ -1,5 +1,11 @@
 .seach-hotel {
   text-align: center;
+  line-height: 0;
+}
+
+.seach-hotel__wrapper {
+  padding: 0 20px;
+  margin-bottom: 49px;
 }
 
 .seach-hotel__slogan {
@@ -7,6 +13,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 0 21px;
 }
 
 .seach-hotel__text {
@@ -14,4 +21,18 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0 0 27px;
+}
+
+.seach-hotel__button {
+  display: block;
+  margin: 0 auto;
+  padding: 14.5px 32px 17.5px;
+  width: 100%;
+  max-width: 458px;
+}
+
+.seach-hotel__map {
+  height: 350px;
+  object-fit: cover;
 }
