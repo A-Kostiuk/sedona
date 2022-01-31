@@ -1,7 +1,24 @@
-.video-presentation__video {
+.video-presentation {
   @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
+}
+
+.video-presentation__description {
+  padding: 0 20px;
+}
+
+.video-presentation__video {
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 800px;
   }
 
   @media (min-width: $desctop-width) {

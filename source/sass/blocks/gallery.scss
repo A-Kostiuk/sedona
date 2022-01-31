@@ -1,3 +1,15 @@
+.gallery {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
+}
+
 .gallery__list {
   @include clear-list;
 
@@ -13,6 +25,33 @@
 }
 
 .gallery__item {
+  position: relative;
+  padding: 22px 0 15px;
+
+  @media (max-width: $only-mobile-width) {
+    &::before,
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: $grey-150;
+      left: -20px;
+      right: -20px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &:last-child::after {
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   &--row {
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;

@@ -38,7 +38,7 @@
     }
   }
 
-  &::before {
+  &:not(:nth-last-child(3))::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -48,13 +48,9 @@
     right: -20px;
   }
 
-  &:last-of-type::before {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     &::before {
-      content: none;
+      display: none;
     }
   }
 }
@@ -64,7 +60,6 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
-  flex-wrap: 400;
 
   @media (min-width: $tablet-width) {
     display: block;

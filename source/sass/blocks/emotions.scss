@@ -1,33 +1,15 @@
 .emotions {
   margin-bottom: 51px;
+  padding-top: 20px;
 }
 
 .emotions__title {
   display: block;
-  padding: 20px 0 0;
   margin: 0 0 15px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-
-    &::before,
-    &::after {
-      content: "";
-      flex-grow: 1;
-      flex-shrink: 0;
-      height: 1px;
-      background-color: $grey-500;
-    }
-
-    &::before {
-      margin-right: 47px;
-    }
-
-    &::after {
-      margin-left: 47px;
-    }
+    margin-bottom: 54.5px;
   }
 }
 
@@ -44,6 +26,15 @@
   resize: none;
 
   &::placeholder {
-    color: inherit;
+    color: rgba($basic-black, $alpha: .5);
+  }
+
+  &:hover {
+    background-color: $grey-150;
+  }
+
+  &:focus {
+    background-color: $basic-white;
+    box-shadow: inset 0 0 0 4px $grey-550;
   }
 }

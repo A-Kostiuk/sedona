@@ -2,14 +2,23 @@
   margin: 0 0 37px;
   padding: 20px 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: 80px;
+  }
 }
 
 .impression__list {
   @include clear-list;
 }
 
-.impression__text {
-  display: block;
+.impression__label {
+  display: flex;
+  align-items: center;
   position: relative;
   font-size: 18px;
   line-height: 26px;
@@ -17,26 +26,40 @@
   color: $basic-black;
   margin-bottom: 43px;
   padding-left: 78px;
+  min-height: 58px;
 }
 
-.impression__radio + .impression__text::before {
+.impression__radio + .impression__label::before {
   content: "";
   position: absolute;
-  width: 53px;
-  height: 53px;
+  width: 58px;
+  height: 58px;
   background-color: $grey-200;
   border-radius: 50%;
   left: 0;
-  top: -15px;
+  top: 0;
 }
 
-.impression__radio:checked + .impression__text::after {
+.impression__radio:checked + .impression__label::after {
   content: "";
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   background-color: $special-black;
   border-radius: 50%;
-  left: 16px;
-  top: 0;
+  left: 17px;
+  top: 17px;
+}
+
+.impression__radio:hover + .impression__label::before,
+.impression__radio:focus + .impression__label::before {
+  background-color: $grey-150;
+}
+
+.impression__radio:active + .impression__label::before {
+  background-color: $grey-550;
+}
+
+.impression__radio:active + .impression__label::after {
+  opacity: .3;
 }

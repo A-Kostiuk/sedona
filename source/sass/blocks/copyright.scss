@@ -12,3 +12,17 @@
   color: $basic-black;
   margin: 0 12px 0 0;
 }
+
+.copyright__logo {
+  object-fit: scale-down;
+  width: 34px;
+  height: 34px;
+}
+
+.copyright__link:hover .copyright__figure {
+  fill: $basic-light-blue;
+}
+
+.copyright__link:active .copyright__figure {
+  fill: rgba($basic-black, $alpha: .3);
+}

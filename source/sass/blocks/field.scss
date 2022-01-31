@@ -18,12 +18,21 @@
   width: 100%;
 
   &::placeholder {
-    color: inherit;
+    color: rgba($basic-black, $alpha: .5);
+  }
+
+  &:hover {
+    background-color: $grey-150;
+  }
+
+  &:focus {
+    background-color: $basic-white;
+    box-shadow: inset 0 0 0 4px $grey-550;
   }
 }
 
 .field__input--phone {
-  padding-right: 58px;
+  padding-right: 80px;
   background-image:
     url("../../img/field/phone.svg"),
     linear-gradient(to left, $grey-250 58px, transparent 58px);
@@ -33,7 +42,7 @@
 }
 
 .field__input--email {
-  padding-right: 58px;
+  padding-right: 80px;
   background-image:
     url("../../img/field/email.svg"),
     linear-gradient(to left, $grey-250 58px, transparent 58px);

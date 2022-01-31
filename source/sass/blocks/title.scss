@@ -12,4 +12,35 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &--sidelines {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &::before,
+      &::after {
+        content: "";
+        flex-grow: 1;
+        flex-shrink: 0;
+        height: 1px;
+        background-color: $grey-500;
+      }
+
+      &::before {
+        margin-right: 47px;
+      }
+
+      &::after {
+        margin-left: 47px;
+      }
+    }
+  }
 }

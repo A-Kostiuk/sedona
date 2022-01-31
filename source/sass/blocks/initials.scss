@@ -12,6 +12,10 @@
   margin-bottom: 19px;
   padding: 20px 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
 .initials__item {

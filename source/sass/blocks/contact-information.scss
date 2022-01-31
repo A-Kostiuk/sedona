@@ -10,20 +10,6 @@
   margin: 0 0 19px;
   padding: 20px 0 0;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-
-    &::before,
-    &::after {
-      content: "";
-      flex-grow: 1;
-      flex-shrink: 0;
-      height: 1px;
-      background-color: $grey-500;
-    }
-  }
 }
 
 .contact-information__item {

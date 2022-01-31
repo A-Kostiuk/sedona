@@ -7,5 +7,30 @@
   background-position-y: 100%;
   background-size: 1200px 57px, cover;
   text-align: center;
-  padding: 90px 18px 85px;
+  padding: 100px 18px 120px;
+
+  &--home {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+}
+
+.page-header__welcome-title {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 80px;
+  }
+
+  &--home {
+    width: 282px;
+    height: 214px;
+
+    @media (min-width: $tablet-width) {
+      width: 460px;
+      height: 350px;
+    }
+  }
 }
