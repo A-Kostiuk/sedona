@@ -1,5 +1,5 @@
 .main__advantages {
-  margin-bottom: 33px;
+  margin-bottom: 60px;
 }
 
 .main__feedback {
@@ -10,8 +10,19 @@
 
 .main__description {
   margin-bottom: 30px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 460px;
+    margin: 0 auto 81px;
+    padding: 0;
+  }
 }
 
 .main__gallery {
-  margin-bottom: 32px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }

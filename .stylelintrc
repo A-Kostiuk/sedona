@@ -9,6 +9,6 @@
         "composes"
       ]
     }],
-    "unit-whitelist": ["em", "rem", "s", "px", "%", "fr", "vh", "deg"]
+    "unit-whitelist": ["em", "rem", "s", "px", "%", "fr", "vh", "deg", "dppx"]
   }
 }

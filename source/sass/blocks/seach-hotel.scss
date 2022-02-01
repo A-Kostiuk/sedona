@@ -1,19 +1,33 @@
 .seach-hotel {
   text-align: center;
-  line-height: 0;
 }
 
 .seach-hotel__wrapper {
   padding: 0 20px;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 460px;
+    margin: 0 auto 58px;
+    padding: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .seach-hotel__slogan {
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  margin: 0 0 21px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 0 32px;
+  }
 }
 
 .seach-hotel__text {
@@ -21,7 +35,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0 0 27px;
+  margin: 0 0 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .seach-hotel__button {
@@ -33,6 +55,31 @@
 }
 
 .seach-hotel__map {
+  border: none;
+  width: 100%;
   height: 350px;
-  object-fit: cover;
+  background-image: url("../img/seach-hotel/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/seach-hotel/map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/seach-hotel/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/seach-hotel/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image: url("../img/seach-hotel/map-desctop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/seach-hotel/map-desctop@2x.png");
+    }
+  }
 }

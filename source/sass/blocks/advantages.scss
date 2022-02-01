@@ -9,6 +9,12 @@
   }
 }
 
+.advantages__item {
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+  }
+}
+
 .advantages__item--grey {
   position: relative;
   padding: 26px 20px 24px;
@@ -29,6 +35,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+
     &::before {
       content: none;
     }
@@ -42,12 +51,14 @@
 }
 
 .advantages__slogan {
-  margin: 0 0 35px;
-  padding: 0 12px;
+  margin: 0 auto 35px;
+  padding: 0 20px;
   text-align: center;
+  max-width: 520px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin: 0 auto 31px;
+    padding: 0;
   }
 }
 
@@ -58,10 +69,12 @@
   font-weight: 400;
   text-align: center;
   padding: 0 12px;
-  margin: 0 0 11px;
+  margin: 0 auto 26px;
+  max-width: 520px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
+    padding: 0;
   }
 
   @media (min-width: $desctop-width) {
@@ -70,24 +83,46 @@
 }
 
 .advantages__content {
-  line-height: 0;
+  background-color: $basic-light-blue;
 
   &--margin-bottom {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+
+    &--right {
+      justify-content: flex-end;
+    }
   }
 }
 
 .advantages__description {
   padding: 54px 20px 39px;
-  background-color: $basic-light-blue;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% / 3);
+    padding: 40px 20px 43px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 50px;
+  }
 
   &--second {
-    order: 2;
+    @media (max-width: $only-mobile-width) {
+      padding-top: 42px;
+      padding-bottom: 34px;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
   &--slice {
@@ -99,32 +134,38 @@
       background-position-y: -18px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 40px 20px 43px;
-  }
 }
 
 .advantages__image {
-  grid-column: span 2;
+  display: block;
+  margin: 0 auto;
   height: 260px;
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    height: 100%;
+    width: auto;
   }
 }
 
 .advantages__title {
-  margin: 0 0 21px;
+  margin: 0 0 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .advantages__text::before {
   display: block;
   counter-increment: advantages;
   content: "— №" counter(advantages) " —";
-  margin-bottom: 21px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__text {
@@ -142,4 +183,12 @@
 
 .advantages__text:not(:last-child) {
   margin: 0 0 21px;
+}
+
+.advantages__city {
+  margin-bottom: 34px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 56px;
+  }
 }

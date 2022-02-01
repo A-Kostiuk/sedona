@@ -6,11 +6,21 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desctop-width) {
     margin-bottom: 55px;
+  }
+}
+
+.page__header--photos {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 100px;
   }
 }
 
@@ -36,5 +46,13 @@
 
   @media (min-width: $desctop-width) {
     background-color: $basic-white;
+  }
+}
+
+.page___main--photos {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
   }
 }

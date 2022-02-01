@@ -1,10 +1,11 @@
 .social {
   @include clear-list;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.social__item {
-  margin-right: 6px;
+.social__item + .social__item {
+  margin-left: 6px;
 }
 
 .social__link {

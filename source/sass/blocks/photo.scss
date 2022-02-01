@@ -4,10 +4,25 @@
   }
 }
 
+.photo__link {
+  display: block;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .photo__img {
   display: block;
-  max-height: 400px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
+  max-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 650px;
+  }
 }
 
 .photo__caption {
@@ -16,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 17px 20px 15px;
 
     &--darken {
       background-color: $grey-300;
@@ -73,7 +88,7 @@
 .photo__likes {
   padding-left: 37px;
   position: relative;
-  min-width: 61px;
+  min-width: 68px;
 
   &::before {
     content: "";

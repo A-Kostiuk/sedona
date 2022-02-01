@@ -10,6 +10,13 @@
 
 .video-presentation__description {
   padding: 0 20px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    margin: 0 auto 80px;
+    padding: 0;
+  }
 }
 
 .video-presentation__video {

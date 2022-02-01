@@ -11,6 +11,10 @@
     justify-items: center;
     padding: 36px 0;
   }
+
+  @media (min-width: $desctop-width) {
+    column-gap: 50px;
+  }
 }
 
 .page-footer__hash {
@@ -19,7 +23,7 @@
   line-height: 26px;
   font-weight: 700;
   color: $basic-black;
-  margin: 0 0 33px;
+  margin: 0 0 31px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

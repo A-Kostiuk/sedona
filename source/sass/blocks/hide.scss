@@ -1,3 +1,9 @@
+.hide--mobile {
+  @media (max-width: $only-mobile-width) {
+    display: none;
+  }
+}
+
 .hide--tablet {
   @media (min-width: $tablet-width) {
     display: none;

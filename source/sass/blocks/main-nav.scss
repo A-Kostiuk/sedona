@@ -10,6 +10,11 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    width: 187px;
+    height: 96px;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {

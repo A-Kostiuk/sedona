@@ -10,13 +10,14 @@
   line-height: 26px;
   font-weight: 400;
   color: $basic-black;
-  margin: 0 12px 0 0;
+  margin: 0 8px 0 0;
 }
 
 .copyright__logo {
+  display: block;
   object-fit: scale-down;
-  width: 34px;
-  height: 34px;
+  width: 27px;
+  height: 35px;
 }
 
 .copyright__link:hover .copyright__figure {
@@ -24,5 +25,5 @@
 }
 
 .copyright__link:active .copyright__figure {
-  fill: rgba($basic-black, $alpha: .3);
+  fill: rgba($basic-black, $alpha: 0.3);
 }

@@ -1,21 +1,49 @@
 .page-header__main-image {
   margin: 0 auto;
   background-color: #766458;
-  background-image: url("../../img/header-triangle.svg"), url("../../img/header-background.jpg");
+  background-image: url("../img/page-header/header-triangle.svg"),
+    url("../img/page-header/intro-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
   background-size: 1200px 57px, cover;
   text-align: center;
-  padding: 100px 18px 120px;
+  padding: 53px 18px 67px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/page-header/header-triangle.svg"),
+      url("../img/page-header/intro-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/page-header/header-triangle.svg"),
+      url("../img/page-header/intro-tablet.jpg");
+    padding: 94px 20px 116px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-header/header-triangle.svg"),
+        url("../img/page-header/intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 100px 18px 120px;
+  }
 
   &--home {
     padding-top: 90px;
     padding-bottom: 85px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 78px;
+      padding-bottom: 90px;
+    }
   }
 }
 
 .page-header__welcome-title {
+  display: block;
+  margin: 0 auto;
   width: 229px;
   height: 39px;
 
