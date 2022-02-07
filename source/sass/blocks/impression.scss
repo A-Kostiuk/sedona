@@ -1,10 +1,19 @@
+.impression {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .impression__title {
-  margin: 0 0 37px;
+  margin: 0 0 22px;
   padding: 20px 0 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desctop-width) {
@@ -16,6 +25,14 @@
   @include clear-list;
 }
 
+.impression__item:not(:last-child) {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
 .impression__label {
   display: flex;
   align-items: center;
@@ -24,7 +41,6 @@
   line-height: 26px;
   font-weight: 700;
   color: $basic-black;
-  margin-bottom: 43px;
   padding-left: 78px;
   min-height: 58px;
 }
@@ -32,8 +48,8 @@
 .impression__radio + .impression__label::before {
   content: "";
   position: absolute;
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   background-color: $grey-200;
   border-radius: 50%;
   left: 0;
@@ -43,12 +59,12 @@
 .impression__radio:checked + .impression__label::after {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 21px;
   background-color: $special-black;
   border-radius: 50%;
-  left: 17px;
-  top: 17px;
+  left: 17.5px;
+  top: 17.5px;
 }
 
 .impression__radio:hover + .impression__label::before,

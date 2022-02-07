@@ -24,6 +24,16 @@
   }
 }
 
+.page__header--form {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 115px;
+  }
+}
+
 .page__body {
   padding: 0;
   margin: 0 auto;
@@ -54,5 +64,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
+  }
+}
+
+.page__main--form {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
   }
 }

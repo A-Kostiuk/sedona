@@ -1,9 +1,22 @@
 .field__label {
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
   color: $special-black;
   margin-right: 14px;
+
+  &--contact-information {
+    margin: 0 0 7px 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin: 0 15px 0 0;
+    }
+  }
 }
 
 .field__input {
@@ -54,6 +67,6 @@
 .field__input--email,
 .field__input--phone {
   @media (min-width: $desctop-width) {
-    width: 300px;
+    width: 315px;
   }
 }

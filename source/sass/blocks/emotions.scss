@@ -1,5 +1,4 @@
 .emotions {
-  margin-bottom: 51px;
   padding-top: 20px;
 }
 
@@ -14,6 +13,7 @@
 }
 
 .emotions__textarea {
+  display: block;
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
@@ -22,6 +22,7 @@
   background-color: $grey-200;
   padding: 13px 22px 29px;
   width: 100%;
+  height: 160px;
   border: 0;
   resize: none;
 

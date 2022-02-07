@@ -70,67 +70,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: absolute;
   padding: 0;
   width: 40px;
   height: 40px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  color: $extra-grey;
 
-  path {
-    fill: $extra-grey;
+  &:hover,
+  &:focus {
+    color: $basic-black;
   }
 
-  &:hover path,
-  &:focus path {
-    fill: $basic-black;
-  }
-
-  &:active path {
-    fill: rgba($basic-black, $alpha: .3);
+  &:active {
+    color: rgba($basic-black, $alpha: .3);
   }
 
   @media (min-width: $tablet-width) {
-    top: 26px;
+    color: $basic-white;
 
-    path {
-      fill: $basic-white;
+    &:hover,
+    &:focus {
+      color: rgba($basic-white, $alpha: .6);
     }
 
-    &:hover path,
-    &:focus path {
-      fill: rgba($basic-white, $alpha: .6);
-    }
-
-    &:active path {
-      fill: rgba($basic-white, $alpha: .3);
+    &:active {
+      color: rgba($basic-white, $alpha: .3);
     }
   }
 }
 
 .video-control__button--replay {
   margin-right: auto;
-  // left: 13px;
-
-  @media (min-width: $tablet-width) {
-    left: 23px;
-  }
 }
 
 .video-control__button--subs {
   margin-right: 17px;
-  // right: 71px;
-
-  @media (min-width: $tablet-width) {
-    right: 88px;
-  }
-}
-
-.video-control__button--fullscreen {
-  right: 15px;
-
-  @media (min-width: $tablet-width) {
-    right: 30px;
-  }
 }

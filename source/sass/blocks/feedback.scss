@@ -12,7 +12,7 @@
 
 .feedback__title {
   text-align: center;
-  margin: 0 0 26px;
+  margin: 0 0 32px;
 }
 
 .feedback__text {
@@ -23,4 +23,12 @@
   color: $special-black;
   text-align: center;
   margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 40px;
+  }
 }

@@ -1,11 +1,20 @@
 .attraction {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .attraction__title {
   padding: 15px 0 0;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 45px;
+  }
 }
 
 .attraction__list {
@@ -13,16 +22,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 70%;
+    width: 465px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 10px;
+    gap: 32px 60px;
   }
 
   @media (min-width: $desctop-width) {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 20px 50px;
   }
 }
 
@@ -66,10 +75,10 @@
   position: absolute;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../../img/attraction/tick.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  top: 20;
+  background-size: 23px 16px;
+  top: 20px;
   left: 17px;
 }
 

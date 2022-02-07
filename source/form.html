@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="page__header page-header">
+    <header class="page__header page__header--form page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__link-logo" href="index.html">
           <picture>
@@ -46,10 +46,10 @@
       </div>
     </header>
 
-    <main class="page__main main">
-      <section class="main__feedback feedback">
+    <main class="page__main page__main--form main">
+      <section class="feedback">
         <h1 class="feedback__title title title--main">Оставьте свой отзыв</h1>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br> а также о посещенных вами
           достопримечательностях</p>
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Написать отзыв</h2>
@@ -71,13 +71,13 @@
           <fieldset class="feedback-form__item feedback-form__item--span2 contact-information">
             <legend class="contact-information__title title title--sidelines">Контактная информация:</legend>
             <p class="contact-information__item field">
-              <label class="field__label" for="phone"><span class="hide hide--desctop">Контактный</span>
+              <label class="field__label field__label--contact-information" for="phone"><span class="hide hide--desctop">Контактный</span>
                 телефон&#42;:</label>
               <input class="field__input field__input--phone" type="text" placeholder="Введите телефон" name="phone"
                 id="phone">
             </p>
-            <p class="contact-information__item field field--row-desctop">
-              <label class="field__label" for="email">Электронная почта&#42;:</label>
+            <p class="contact-information__item field">
+              <label class="field__label field__label--contact-information" for="email">Электронная почта&#42;:</label>
               <input class="field__input field__input--email" type="email" placeholder="Введите e-mail" name="email"
                 id="email">
             </p>
@@ -103,7 +103,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__item feedback-form__item--span2 attraction">
-            <legend class="attraction__title title title--sidelines">Посещенные достопримечательности:</legend>
+            <legend class="attraction__title title title--sidelines">Посещенные <br> достопримечательности:</legend>
             <ul class="attraction__list">
               <li class="attraction__item">
                 <input class="visually-hidden attraction__checkbox" type="checkbox" name="attraction"
