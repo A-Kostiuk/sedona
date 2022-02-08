@@ -1238,12 +1238,12 @@ a {
     position: absolute;
     width: 23px;
     height: 21px;
-    background-image: url("../../img/photo/like-icon-black.svg");
+    background-image: url("../img/photo/like-icon-black.svg");
     left: 0;
     top: 0; }
   @media (min-width: 1280px) {
     .photo__likes::before {
-      background-image: url("../../img/photo/like-icon-white.svg"); } }
+      background-image: url("../img/photo/like-icon-white.svg"); } }
 
 @media (min-width: 768px) {
   .video-presentation {
