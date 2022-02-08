@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -21,6 +22,16 @@ const styles = () => {
 };
 
 exports.styles = styles;
+
+// HtmlMin
+
+const htmlMin = () => {
+  return gulp.src("sourse/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("docs"));
+};
+
+exports.htmlmin = htmlmin;
 
 // Server
 
