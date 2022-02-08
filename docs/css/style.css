@@ -485,13 +485,13 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%; }
   .city-advantages__item--housing::before {
-    background-image: url("../../img/city_advantages/housing.svg");
+    background-image: url("../img/city_advantages/housing.svg");
     background-size: 39px 37px; }
   .city-advantages__item--food::before {
-    background-image: url("../../img/city_advantages/food.svg");
+    background-image: url("../img/city_advantages/food.svg");
     background-size: 40px 35px; }
   .city-advantages__item--souvenirs::before {
-    background-image: url("../../img/city_advantages/souvenirs.svg");
+    background-image: url("../img/city_advantages/souvenirs.svg");
     background-size: 32px 38px; }
   @media (min-width: 768px) {
     .city-advantages__item {
@@ -850,14 +850,14 @@ a {
 
 .field__input--phone {
   padding-right: 80px;
-  background-image: url("../../img/field/phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-image: url("../img/field/phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
   background-repeat: no-repeat;
   background-size: 18px 18px, 58px 58px;
   background-position: right 20px top 20px, right top; }
 
 .field__input--email {
   padding-right: 80px;
-  background-image: url("../../img/field/email.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-image: url("../img/field/email.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
   background-repeat: no-repeat;
   background-size: 16px 12px, 58px 58px;
   background-position: right 21px top 23px, right top; }
@@ -1062,7 +1062,7 @@ a {
   position: absolute;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/attraction/tick.svg");
+  background-image: url("../img/attraction/tick.svg");
   background-repeat: no-repeat;
   background-size: 23px 16px;
   top: 20px;
