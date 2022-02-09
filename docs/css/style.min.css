@@ -639,7 +639,7 @@ a {
   .social__link:hover {
     background-color: #669ec0; }
   .social__link:active::after {
-    opacity: .3; }
+    opacity: 0.3; }
 
 .social__link--twitter::after {
   background-image: url("../img/social/twitter.svg");
@@ -994,7 +994,7 @@ a {
   background-color: #d5d5d5; }
 
 .impression__radio:active + .impression__label::after {
-  opacity: .3; }
+  opacity: 0.3; }
 
 .attraction {
   padding-bottom: 25px; }
@@ -1076,7 +1076,7 @@ a {
   background-color: #d5d5d5; }
 
 .attraction__checkbox:active + .attraction__label::after {
-  opacity: .3; }
+  opacity: 0.3; }
 
 .emotions {
   padding-top: 20px; }
@@ -1431,6 +1431,9 @@ a {
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   text-align: center; }
+
+.modal--show {
+  display: block; }
 
 .modal--succes {
   max-width: 640px;

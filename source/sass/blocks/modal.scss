@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.modal--show {
+  display: block;
+}
+
 .modal--succes {
   max-width: 640px;
   padding: 30px 0 0;

@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -51,17 +51,17 @@
         <h1 class="feedback__title title title--main">Оставьте свой отзыв</h1>
         <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br> а также о посещенных вами
           достопримечательностях</p>
-        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
           <h2 class="visually-hidden">Написать отзыв</h2>
           <fieldset class="feedback-form__item initials">
             <legend class="initials__title title">Представьтесь:</legend>
             <p class="initials__item field field--row">
               <label class="field__label" for="first-name">Имя&#42;:</label>
-              <input class="field__input" type="text" placeholder="Петр" name="first-name" id="first-name">
+              <input class="field__input" type="text" placeholder="Петр" name="first-name" id="first-name" required>
             </p>
             <p class="initials__item field">
               <label class="field__label" for="last-name">Фамилия&#42;:</label>
-              <input class="field__input" type="text" placeholder="Иванов" name="last-name" id="last-name">
+              <input class="field__input" type="text" placeholder="Иванов" name="last-name" id="last-name" required>
             </p>
             <p class="initials__item field">
               <label class="field__label" for="surname">Отчество:</label>
@@ -73,13 +73,11 @@
             <p class="contact-information__item field">
               <label class="field__label field__label--contact-information" for="phone"><span class="hide hide--desctop">Контактный</span>
                 телефон&#42;:</label>
-              <input class="field__input field__input--phone" type="text" placeholder="Введите телефон" name="phone"
-                id="phone">
+              <input class="field__input field__input--phone" type="text" placeholder="Введите телефон" name="phone" id="phone" required>
             </p>
             <p class="contact-information__item field">
               <label class="field__label field__label--contact-information" for="email">Электронная почта&#42;:</label>
-              <input class="field__input field__input--email" type="email" placeholder="Введите e-mail" name="email"
-                id="email">
+              <input class="field__input field__input--email" type="email" placeholder="Введите e-mail" name="email" id="email">
             </p>
           </fieldset>
           <fieldset class="feedback-form__item feedback-form__item--first impression">
@@ -183,8 +181,9 @@
       <button class="modal__button button">Закрыть окно</button>
     </div>
   </section>
-  
+
   <script src="js/mainNavigation.min.js"></script>
+  <script src="js/succesPopUp.min.js"></script>
 </body>
 
 </html>

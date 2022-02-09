@@ -23,6 +23,9 @@ const styles = () => {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
+    .pipe(rename(function (path) {
+      path.basename += ".min";
+    }))
     .pipe(gulp.dest("docs/css"))
     .pipe(sync.stream());
 };
@@ -49,7 +52,6 @@ const scripts = () => {
     .pipe(
       rename(function (path) {
         path.basename += ".min";
-        path.extname = ".js";
       })
     )
     .pipe(gulp.dest("docs/js"))
@@ -154,12 +156,20 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-};
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+}
 
 exports.default = gulp.series(
   clean,
