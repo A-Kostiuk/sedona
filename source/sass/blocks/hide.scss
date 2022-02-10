@@ -1,4 +1,4 @@
-.hide--mobile {
+.hide--only-mobile {
   @media (max-width: $only-mobile-width) {
     display: none;
   }

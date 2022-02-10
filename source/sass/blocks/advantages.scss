@@ -52,7 +52,7 @@
 
 .advantages__slogan {
   margin: 0 auto 35px;
-  padding: 0 20px;
+  padding: 0 25px;
   text-align: center;
   max-width: 520px;
 
@@ -67,14 +67,15 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
   padding: 0 12px;
   margin: 0 auto 26px;
   max-width: 520px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
     padding: 0;
+    text-align: left;
   }
 
   @media (min-width: $desctop-width) {
