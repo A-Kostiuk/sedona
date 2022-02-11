@@ -1424,8 +1424,8 @@ a {
   display: none;
   width: 100%;
   position: fixed;
-  top: 200px;
-  bottom: auto;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
   right: 0;
   margin: auto;
@@ -1448,7 +1448,7 @@ a {
   padding: 40px 40px 35px; }
   @media (min-width: 768px) {
     .modal--falture {
-      padding: 35px 64px 50px; } }
+      padding: 35px 45px 50px; } }
 
 .modal__title--succes {
   margin: 0 0 45px;
@@ -1492,10 +1492,12 @@ a {
   padding: 18px 20px 14px; }
 
 .modal__button--falture {
-  width: 69%;
+  min-width: 180px;
+  width: 70%;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .modal__button--falture {
-      width: 100%; } }
+      width: 100%;
+      max-width: 272px; } }
 
 /*# sourceMappingURL=style.css.map */

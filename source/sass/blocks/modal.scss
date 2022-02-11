@@ -2,8 +2,8 @@
   display: none;
   width: 100%;
   position: fixed;
-  top: 200px;
-  bottom: auto;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
   right: 0;
   margin: auto;
@@ -30,7 +30,7 @@
   padding: 40px 40px 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 64px 50px;
+    padding: 35px 45px 50px;
   }
 }
 
@@ -89,10 +89,12 @@
 }
 
 .modal__button--falture {
-  width: 69%;
+  min-width: 180px;
+  width: 70%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    max-width: 272px;
   }
 }
